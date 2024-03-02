@@ -1,0 +1,21 @@
+﻿@using Web_Lk_Xe.Models
+@model TAIKHOAN
+
+<div class="header_sub-nav"  style="top: 72px">
+    <ul class="sub_nav">
+        <li class="sub_nav-item">
+            <a href="/User/capNhatTtAccount" class="sub_nav-link">Tài Khoản</a>
+        </li>
+        @{
+            if (Model.LOAITK == "ad")
+            {
+                <li class="sub_nav-item">
+                    <a href="/Admin/Index" class="sub_nav-link">Admin</a>
+                </li>
+            }
+        }
+        <li class="sub_nav-item">
+            <a href="/User/DangXuat" class="sub_nav-link">Đăng Xuất</a>
+        </li>
+    </ul>
+</div>

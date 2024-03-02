@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewBag.Title = "xemCTSanPham";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+@using Web_Lk_Xe.Models
+<style>
+    * Chi tiết sản phẩm */
+    .main_detail {
+        margin-top: 50px;
+    }
+
+    .detail_header-left {
+        padding: 12px;
+    }
+
+        .detail_header-left img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .page_navigation .divider {
+        position: relative;
+        top: 0;
+        opacity: .35;
+        margin: 0 0.3em;
+        font-weight: 300;
+    }
+
+    .product-order-quantity {
+        display: flex;
+    }
+
+    .form-order .product-order-quantity button {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        border: none;
+    }
+
+    .product-order-quantity input {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #e9e4df;
+    }
+
+    .btn_add_cart {
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        border: none;
+    }
+
+        .btn_add_cart:hover {
+            background-color: #14e3a0;
+        }
+
+    .detail_header-price-product {
+        color: red;
+        font-size: 20px;
+        margin: 12px 0px;
+        font-weight: bold;
+    }
+
+    .page_navigation .page_navigation-item {
+        font-size: 15px;
+        color: #878c8f;
+    }
+
+    .small-img {
+        width: 80% !important;
+    }
+
+    #productImg {
+        width: 300px;
+    }
+
+    .img_main_detail {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+</style>
+<div class="main_detail">
+    <div class="detail_content">
+        <div class="container">
+            <div class="detail_content-body">
+                <div class="row detail_header">
+                    <div class=" col-6 detail_header-left">
+                        <div class="img_main_detail">
+                            <img src="~/Assces/Anh/img_SanPham/DVD-Toyota-Altis-01-300x300.jpg" id="productImg" />
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <!-- div chứa hình ảnh con -->
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 detail_header-right">
+                        <div class="page_navigation">
+                            <a class="page_navigation-item" href="">
+                                Trang Chủ
+                            </a>
+                            <span class="divider">/</span>
+                            <a class="page_navigation-item" href="">
+                                Màn Hình Xe Hơi
+                            </a>
+                        </div>
+                        <div class="detail_header-name-product">
+                            <h3>Camera hành trình Vietmap K12</h3>
+                            <p style="font-size: 12px;">Số lượng còn: 10</p>
+                        </div>
+                        <div class="detail_header-price-product">
+                            <span class="price">10,800,000&nbsp;</span>
+                            <span class="price">₫</span>
+                        </div>
+                        <div class="header_describe">
+                            <div class="describe_title" style="margin-bottom: 12px;">
+                                Mô tả
+                            </div>
+                            <p>
+                                <strong>CPU : </strong>
+                                MT3562 Octa Core, ARM Cortext-A53
+                            </p>
+                            <p>
+                                <strong>Bộ nhớ : </strong>
+                                MT3562 Octa Core, ARM Cortext-A53
+                            </p>
+                            <p>
+                                <strong>Bộ nhớ : </strong>
+                                MT3562 Octa Core, ARM Cortext-A53
+                            </p>
+                            <p>
+                                <strong>Bộ nhớ : </strong>
+                                MT3562 Octa Core, ARM Cortext-A53
+                            </p>
+
+                        </div>
+                        
+                        <hr>
+                        <p style="font-size: 12px;">Danh mục: màn hình</p>
+
+                    </div>
+                </div>
+                <hr>
+   
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        const ProductImg = document.getElementById("productImg");
+        const SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+</script>
+
